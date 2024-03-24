@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplydatatech", "Simplydatatech\Simplydatatech.csproj", "{F8C1243B-2978-424D-95A8-85A9CA3D6349}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8C1243B-2978-424D-95A8-85A9CA3D6349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C1243B-2978-424D-95A8-85A9CA3D6349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C1243B-2978-424D-95A8-85A9CA3D6349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C1243B-2978-424D-95A8-85A9CA3D6349}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E474C525-3525-4970-AA66-99D1CC1F2C38}
+	EndGlobalSection
+EndGlobal

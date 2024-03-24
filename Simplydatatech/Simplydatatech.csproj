@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8C1243B-2978-424D-95A8-85A9CA3D6349}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simplydatatech</RootNamespace>
+    <AssemblyName>Simplydatatech</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44396</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LogFile.cs" />
+    <Compile Include="Models\MailConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\childmain.css" />
+    <Content Include="assets\css\home-lazy.css" />
+    <Content Include="assets\css\main-font.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\resources-lazy.ab43dqumxv.css" />
+    <Content Include="assets\css\search-lazy.css" />
+    <Content Include="assets\css\search-main.css" />
+    <Content Include="assets\css\university-lazy.css" />
+    <Content Include="assets\css\university-main.css" />
+    <Content Include="assets\image\127357.jpeg" />
+    <Content Include="assets\image\1410243f-aea7-497b-9bd1-737a4a6a9e34.png" />
+    <Content Include="assets\image\2018-gold-winner.png" />
+    <Content Include="assets\image\2019_Top20.png" />
+    <Content Include="assets\image\2020-05-21.jpg" />
+    <Content Include="assets\image\2020-gold-winner.png" />
+    <Content Include="assets\image\2020_Top20.png" />
+    <Content Include="assets\image\96321_1509954180.jpg" />
+    <Content Include="assets\image\Accenture%281%29.png" />
+    <Content Include="assets\image\Accenture.png" />
+    <Content Include="assets\image\Adobe.png" />
+    <Content Include="assets\image\AGBA-2020-winner.png" />
+    <Content Include="assets\image\alumni-video_v1.jpg" />
+    <Content Include="assets\image\Amazon%281%29.png" />
+    <Content Include="assets\image\Amazon%282%29.png" />
+    <Content Include="assets\image\Amazon.png" />
+    <Content Include="assets\image\Amazon_IT.jpg" />
+    <Content Include="assets\image\American-Express.png" />
+    <Content Include="assets\image\amz.png" />
+    <Content Include="assets\image\Apple%281%29.png" />
+    <Content Include="assets\image\apple-touch-icon-120x120.png" />
+    <Content Include="assets\image\apple-touch-icon-152x152.png" />
+    <Content Include="assets\image\apple-touch-icon-60x60.png" />
+    <Content Include="assets\image\apple-touch-icon-76x76.png" />
+    <Content Include="assets\image\Apple.png" />
+    <Content Include="assets\image\Arrow.gif" />
+    <Content Include="assets\image\Bag.gif" />
+    <Content Include="assets\image\banner_v1.jpg" />
+    <Content Include="assets\image\bootcamp-rating.png" />
+    <Content Include="assets\image\Bosch.png" />
+    <Content Include="assets\image\Bosch_Manufacturing.jpg" />
+    <Content Include="assets\image\broadcom.png" />
+    <Content Include="assets\image\bryan.jpg" />
+    <Content Include="assets\image\call.png" />
+    <Content Include="assets\image\caltech-bg-footer.png" />
+    <Content Include="assets\image\Career-Support-1.jpg" />
+    <Content Include="assets\image\Career-Support-2.jpg" />
+    <Content Include="assets\image\Career-Support-2_1.jpg" />
+    <Content Include="assets\image\Cisco-Systems.png" />
+    <Content Include="assets\image\citi.png" />
+    <Content Include="assets\image\Comcast.png" />
+    <Content Include="assets\image\course-report.png" />
+    <Content Include="assets\image\dell.png" />
+    <Content Include="assets\image\ericsson.png" />
+    <Content Include="assets\image\EY%281%29.png" />
+    <Content Include="assets\image\EY%282%29.png" />
+    <Content Include="assets\image\EY.png" />
+    <Content Include="assets\image\favicon.ico" />
+    <Content Include="assets\image\favicon.png" />
+    <Content Include="assets\image\fidelity.png" />
+    <Content Include="assets\image\free-app.png" />
+    <Content Include="assets\image\ganapathi.jpg" />
+    <Content Include="assets\image\ge.png" />
+    <Content Include="assets\image\Goldman-Sachs%281%29.png" />
+    <Content Include="assets\image\Goldman-Sachs.png" />
+    <Content Include="assets\image\Google%281%29.png" />
+    <Content Include="assets\image\Google.png" />
+    <Content Include="assets\image\goutami-chitrapu.jpeg" />
+    <Content Include="assets\image\Home-Page-Thumbnail-Image.jpg" />
+    <Content Include="assets\image\home-page_sprite_v7 %281%29.png" />
+    <Content Include="assets\image\home-page_sprite_v7.png" />
+    <Content Include="assets\image\homepageiimi.jpg" />
+    <Content Include="assets\image\Homepage_logo.png" />
+    <Content Include="assets\image\Homepage_thumbnail_mitxpro.jpg" />
+    <Content Include="assets\image\IBM%281%29.png" />
+    <Content Include="assets\image\IBM.png" />
+    <Content Include="assets\image\IIITB_logo_new.png" />
+    <Content Include="assets\image\IIITB_Thumbnail_image.jpg" />
+    <Content Include="assets\image\IITkanpurblockhain.jpg" />
+    <Content Include="assets\image\IITkanpurcyber.jpg" />
+    <Content Include="assets\image\IITK_Pricing_Banner.png" />
+    <Content Include="assets\image\iitk_tab_v_3_2.png" />
+    <Content Include="assets\image\IITK_University_Logo_Colored.png" />
+    <Content Include="assets\image\IITK_University_Logo_on_Megamenu.png" />
+    <Content Include="assets\image\imtg_thumbnail.jpg" />
+    <Content Include="assets\image\infosys.png" />
+    <Content Include="assets\image\Johnson_and_Johnson.png" />
+    <Content Include="assets\image\JPMorgan-Chase%281%29.png" />
+    <Content Include="assets\image\JPMorgan-Chase.png" />
+    <Content Include="assets\image\kpmg.png" />
+    <Content Include="assets\image\linkedin-logo.png" />
+    <Content Include="assets\image\LinkedIn.png" />
+    <Content Include="assets\image\liquiloan-white_v1.png" />
+    <Content Include="assets\image\livechat-send-file.png" />
+    <Content Include="assets\image\logo.png" />
+    <Content Include="assets\image\map.jpg" />
+    <Content Include="assets\image\Matplotlib.png" />
+    <Content Include="assets\image\maximize.png" />
+    <Content Include="assets\image\Mercedes-Benz.png" />
+    <Content Include="assets\image\merle-shinault.jpg" />
+    <Content Include="assets\image\Microsoft%281%29.png" />
+    <Content Include="assets\image\microsoft-excel.png" />
+    <Content Include="assets\image\Microsoft.png" />
+    <Content Include="assets\image\MIT_NEW_Homepage_Thumbnail_a.jpg" />
+    <Content Include="assets\image\mql-certificates.jpg" />
+    <Content Include="assets\image\mql-new-banner_1.jpg" />
+    <Content Include="assets\image\Muddu_27.PNG" />
+    <Content Include="assets\image\mute.png" />
+    <Content Include="assets\image\new\20230802_160520_0000.png" />
+    <Content Include="assets\image\new\20230816_160317_0000.png" />
+    <Content Include="assets\image\new\Ameen.jpg" />
+    <Content Include="assets\image\new\Data analytics.jpeg" />
+    <Content Include="assets\image\new\Data sceinec.jpeg" />
+    <Content Include="assets\image\new\DataScience details page.jpeg" />
+    <Content Include="assets\image\new\Digital marketing.jpeg" />
+    <Content Include="assets\image\new\Investing banking.jpeg" />
+    <Content Include="assets\image\new\Logo-part.png" />
+    <Content Include="assets\image\new\Logo.jpeg" />
+    <Content Include="assets\image\new\Logo.png" />
+    <Content Include="assets\image\new\Numaan.jpg" />
+    <Content Include="assets\image\new\Products and Services Promotion LinkedIn Video Ad in Violet Cyan Gradient Tech Style %281%29.mp4" />
+    <Content Include="assets\image\new\Violet Gradient Technology ProfessionalBusiness Services LinkedIn Video Ad.mp4" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.20 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.20 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.21 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.21 PM %282%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.21 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.22 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.22 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.23 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.23 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.24 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.24 PM %282%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.24 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.25 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.26 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.26 PM %282%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.26 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.27 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.27 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.28 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.29 PM %281%29.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.29 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Image 2023-07-11 at 4.21.30 PM.jpeg" />
+    <Content Include="assets\image\new\WhatsApp Video 2023-07-11 at 4.21.25 PM.mp4" />
+    <Content Include="assets\image\new\WhatsApp Video 2023-07-11 at 4.21.29 PM.mp4" />
+    <Content Include="assets\image\nomura.png" />
+    <Content Include="assets\image\Numpy-Logo.png" />
+    <Content Include="assets\image\Nvidia.png" />
+    <Content Include="assets\image\Pandas_logo.jpg" />
+    <Content Include="assets\image\PCP-in-Data-Science.jpg" />
+    <Content Include="assets\image\pdp-slider-new.jpg" />
+    <Content Include="assets\image\pdp-slider_1.jpg" />
+    <Content Include="assets\image\pepsico.png" />
+    <Content Include="assets\image\polygon-left.png" />
+    <Content Include="assets\image\polygon-right.png" />
+    <Content Include="assets\image\propelld-white_v1.png" />
+    <Content Include="assets\image\Purdue %28404 by 228%29.jpg" />
+    <Content Include="assets\image\Purdue_404.jpg" />
+    <Content Include="assets\image\Purdue_thumbnail.jpg" />
+    <Content Include="assets\image\Python-Logo.png" />
+    <Content Include="assets\image\qr-code.jpg" />
+    <Content Include="assets\image\R-Logo.png" />
+    <Content Include="assets\image\reject.png" />
+    <Content Include="assets\image\right-mark.png" />
+    <Content Include="assets\image\rolling.gif" />
+    <Content Include="assets\image\ryan.jpg" />
+    <Content Include="assets\image\sabyasachi-gupta.jpeg" />
+    <Content Include="assets\image\sami.jpg" />
+    <Content Include="assets\image\ScikitLearn.png" />
+    <Content Include="assets\image\Scipy-Logo.png" />
+    <Content Include="assets\image\shopSe-logo-white_v1.png" />
+    <Content Include="assets\image\SQL.png" />
+    <Content Include="assets\image\sreeram-narayan.jpeg" />
+    <Content Include="assets\image\startcall.png" />
+    <Content Include="assets\image\startvideo.png" />
+    <Content Include="assets\image\storage-frame-1.18.html" />
+    <Content Include="assets\image\switchup.png" />
+    <Content Include="assets\image\Tableau_Logo_123.png" />
+    <Content Include="assets\image\tensorfloww.png" />
+    <Content Include="assets\image\Thumbnail iit blockchain.jpg" />
+    <Content Include="assets\image\Thumbnail image 404x228.jpg" />
+    <Content Include="assets\image\thumbnail-iit-blockchain.jpg" />
+    <Content Include="assets\image\thumbnail-image.jpg" />
+    <Content Include="assets\image\thumbnail.jpg" />
+    <Content Include="assets\image\Thumbnailimage.jpg" />
+    <Content Include="assets\image\Thumbnail_PS.jpg" />
+    <Content Include="assets\image\top-bg.jpg" />
+    <Content Include="assets\image\trustpilot_v1.png" />
+    <Content Include="assets\image\Uber.png" />
+    <Content Include="assets\image\university-d-v2.png" />
+    <Content Include="assets\image\university-m-v2.png" />
+    <Content Include="assets\image\university-t-v2.png" />
+    <Content Include="assets\image\v1.gif" />
+    <Content Include="assets\image\v2.gif" />
+    <Content Include="assets\image\v3.gif" />
+    <Content Include="assets\image\v4.gif" />
+    <Content Include="assets\image\video_hide.png" />
+    <Content Include="assets\image\vinod .jpg" />
+    <Content Include="assets\image\vodafone.png" />
+    <Content Include="assets\image\Wallet.gif" />
+    <Content Include="assets\image\Walmart.png" />
+    <Content Include="assets\image\wpp.png" />
+    <Content Include="assets\image\_1562746916.jpeg" />
+    <Content Include="assets\image\_1563443878.jpeg" />
+    <Content Include="assets\image\_1567657440.jpeg" />
+    <Content Include="assets\image\_homepage.jpg" />
+    <Content Include="assets\image\_ThumbnaiImage.jpg" />
+    <Content Include="assets\js\1003447763.html" />
+    <Content Include="assets\js\3k9e6hb.js" />
+    <Content Include="assets\js\3k9e714.js" />
+    <Content Include="assets\js\3k9e717.js" />
+    <Content Include="assets\js\3k9e744.js" />
+    <Content Include="assets\js\6si.min.js" />
+    <Content Include="assets\js\866563032.html" />
+    <Content Include="assets\js\8eda44j.js" />
+    <Content Include="assets\js\8eda483.js" />
+    <Content Include="assets\js\960912318.html" />
+    <Content Include="assets\js\aba49154-3ac6-4297-839c-2d581677fb46.js" />
+    <Content Include="assets\js\bat.js" />
+    <Content Include="assets\js\clarity.js" />
+    <Content Include="assets\js\d8h61j3.js" />
+    <Content Include="assets\js\f%281%29.txt" />
+    <Content Include="assets\js\f%282%29.txt" />
+    <Content Include="assets\js\f.txt" />
+    <Content Include="assets\js\fbds.js" />
+    <Content Include="assets\js\fbevents.js" />
+    <Content Include="assets\js\gtm.js" />
+    <Content Include="assets\js\gumlet.min.js" />
+    <Content Include="assets\js\home-lazy.nfxm91n1p1.js" />
+    <Content Include="assets\js\home.nfxm91n1p1.js" />
+    <Content Include="assets\js\i2l1kl1.js" />
+    <Content Include="assets\js\i2l1l5j.js" />
+    <Content Include="assets\js\jquery-noamd.min.js" />
+    <Content Include="assets\js\nr-1208.min.js" />
+    <Content Include="assets\js\qevents.js" />
+    <Content Include="assets\js\saved_resource%281%29.html" />
+    <Content Include="assets\js\saved_resource.html" />
+    <Content Include="assets\js\sha256.js" />
+    <Content Include="assets\js\simplilearn.com_js_university-lazy.uhzi9gmjjn.js" />
+    <Content Include="assets\js\sl.js" />
+    <Content Include="assets\js\tac.min.js" />
+    <Content Include="assets\js\upf.js" />
+    <Content Include="assets\js\v4.js" />
+    <Content Include="assets\js\vendor.nfxm91n1p1.js" />
+    <Content Include="assets\js\webengage-min-v-6.0.js" />
+    <Content Include="assets\js\_a61h74j.js" />
+    <Content Include="assets\js\_a61h76i.js" />
+    <Content Include="assets\js\_f05d4g0.js" />
+    <Content Include="assets\js\_f05d4kf.js" />
+    <Content Include="assets\js\_hg3ca4.js" />
+    <Content Include="Content\Assets\css\font-svg.css" />
+    <Content Include="Content\Assets\css\home-lazy.nfxm91n1p1.css" />
+    <Content Include="Content\Assets\css\main.css" />
+    <Content Include="Content\Assets\image\1003447763.html" />
+    <Content Include="Content\Assets\image\127357.jpeg" />
+    <Content Include="Content\Assets\image\2018-gold-winner.png" />
+    <Content Include="Content\Assets\image\2019_Top20.png" />
+    <Content Include="Content\Assets\image\2020-05-21.jpg" />
+    <Content Include="Content\Assets\image\2020-gold-winner.png" />
+    <Content Include="Content\Assets\image\2020_Top20.png" />
+    <Content Include="Content\Assets\image\866563032.html" />
+    <Content Include="Content\Assets\image\960912318.html" />
+    <Content Include="Content\Assets\image\96321_1509954180.jpg" />
+    <Content Include="Content\Assets\image\AGBA-2020-winner.png" />
+    <Content Include="Content\Assets\image\amz.png" />
+    <Content Include="Content\Assets\image\Bosch.png" />
+    <Content Include="Content\Assets\image\citi.png" />
+    <Content Include="Content\Assets\image\course-report.png" />
+    <Content Include="Content\Assets\image\dell.png" />
+    <Content Include="Content\Assets\image\free-app.png" />
+    <Content Include="Content\Assets\image\ge.png" />
+    <Content Include="Content\Assets\image\goutami-chitrapu.jpeg" />
+    <Content Include="Content\Assets\image\Home-Page-Thumbnail-Image.jpg" />
+    <Content Include="Content\Assets\image\homepageiimi.jpg" />
+    <Content Include="Content\Assets\image\Homepage_logo.png" />
+    <Content Include="Content\Assets\image\Homepage_thumbnail_mitxpro.jpg" />
+    <Content Include="Content\Assets\image\IIITB_logo_new.png" />
+    <Content Include="Content\Assets\image\IIITB_Thumbnail_image.jpg" />
+    <Content Include="Content\Assets\image\IITkanpurcyber.jpg" />
+    <Content Include="Content\Assets\image\IITK_University_Logo_Colored.png" />
+    <Content Include="Content\Assets\image\imtg_thumbnail.jpg" />
+    <Content Include="Content\Assets\image\kpmg.png" />
+    <Content Include="Content\Assets\image\MIT_NEW_Homepage_Thumbnail_a.jpg" />
+    <Content Include="Content\Assets\image\pdp-slider-new.jpg" />
+    <Content Include="Content\Assets\image\pdp-slider_1.jpg" />
+    <Content Include="Content\Assets\image\pepsico.png" />
+    <Content Include="Content\Assets\image\publisher-widget-loader.html" />
+    <Content Include="Content\Assets\image\Purdue %28404 by 228%29.jpg" />
+    <Content Include="Content\Assets\image\Purdue_404.jpg" />
+    <Content Include="Content\Assets\image\Purdue_thumbnail.jpg" />
+    <Content Include="Content\Assets\image\qr-code.jpg" />
+    <Content Include="Content\Assets\image\rolling.gif" />
+    <Content Include="Content\Assets\image\sabyasachi-gupta.jpeg" />
+    <Content Include="Content\Assets\image\saved_resource%281%29.html" />
+    <Content Include="Content\Assets\image\saved_resource.html" />
+    <Content Include="Content\Assets\image\sreeram-narayan.jpeg" />
+    <Content Include="Content\Assets\image\storage-frame-1.18.html" />
+    <Content Include="Content\Assets\image\switchup.png" />
+    <Content Include="Content\Assets\image\Thumbnail iit blockchain.jpg" />
+    <Content Include="Content\Assets\image\Thumbnail image 404x228.jpg" />
+    <Content Include="Content\Assets\image\thumbnail-iit-blockchain.jpg" />
+    <Content Include="Content\Assets\image\thumbnail-image.jpg" />
+    <Content Include="Content\Assets\image\thumbnail.jpg" />
+    <Content Include="Content\Assets\image\Thumbnailimage.jpg" />
+    <Content Include="Content\Assets\image\Thumbnail_PS.jpg" />
+    <Content Include="Content\Assets\image\trustpilot_v1.png" />
+    <Content Include="Content\Assets\image\university-d-v2.png" />
+    <Content Include="Content\Assets\image\university-m-v2.png" />
+    <Content Include="Content\Assets\image\university-t-v2.png" />
+    <Content Include="Content\Assets\image\v1.gif" />
+    <Content Include="Content\Assets\image\v2.gif" />
+    <Content Include="Content\Assets\image\v3.gif" />
+    <Content Include="Content\Assets\image\v4.gif" />
+    <Content Include="Content\Assets\image\vodafone.png" />
+    <Content Include="Content\Assets\image\wpp.png" />
+    <Content Include="Content\Assets\image\_1562746916.jpeg" />
+    <Content Include="Content\Assets\image\_1567657440.jpeg" />
+    <Content Include="Content\Assets\image\_homepage.jpg" />
+    <Content Include="Content\Assets\image\_ThumbnaiImage.jpg" />
+    <Content Include="Content\Assets\js\3k9e6hb.js" />
+    <Content Include="Content\Assets\js\3k9e714.js" />
+    <Content Include="Content\Assets\js\3k9e717.js" />
+    <Content Include="Content\Assets\js\3k9e744.js" />
+    <Content Include="Content\Assets\js\6si.min.js" />
+    <Content Include="Content\Assets\js\8eda44j.js" />
+    <Content Include="Content\Assets\js\8eda483.js" />
+    <Content Include="Content\Assets\js\aba49154-3ac6-4297-839c-2d581677fb46.js" />
+    <Content Include="Content\Assets\js\bat.js" />
+    <Content Include="Content\Assets\js\clarity.js" />
+    <Content Include="Content\Assets\js\d8h61j3.js" />
+    <Content Include="Content\Assets\js\fbds.js" />
+    <Content Include="Content\Assets\js\fbevents.js" />
+    <Content Include="Content\Assets\js\gtm.js" />
+    <Content Include="Content\Assets\js\gumlet.min.js" />
+    <Content Include="Content\Assets\js\home-lazy.nfxm91n1p1.js" />
+    <Content Include="Content\Assets\js\home.nfxm91n1p1.js" />
+    <Content Include="Content\Assets\js\i2l1kl1.js" />
+    <Content Include="Content\Assets\js\i2l1l5j.js" />
+    <Content Include="Content\Assets\js\jquery-noamd.min.js" />
+    <Content Include="Content\Assets\js\main-page-1.js" />
+    <Content Include="Content\Assets\js\nr-1208.min.js" />
+    <Content Include="Content\Assets\js\qevents.js" />
+    <Content Include="Content\Assets\js\sha256.js" />
+    <Content Include="Content\Assets\js\sl.js" />
+    <Content Include="Content\Assets\js\tac.min.js" />
+    <Content Include="Content\Assets\js\upf.js" />
+    <Content Include="Content\Assets\js\v4.js" />
+    <Content Include="Content\Assets\js\vendor.nfxm91n1p1.js" />
+    <Content Include="Content\Assets\js\webengage-min-v-6.0.js" />
+    <Content Include="Content\Assets\js\_a61h74j.js" />
+    <Content Include="Content\Assets\js\_a61h76i.js" />
+    <Content Include="Content\Assets\js\_f05d4g0.js" />
+    <Content Include="Content\Assets\js\_f05d4kf.js" />
+    <Content Include="Content\Assets\js\_hg3ca4.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Assets\0" />
+    <Content Include="Content\Assets\0d4c245767" />
+    <Content Include="Content\Assets\227666084092113" />
+    <Content Include="Content\Assets\d7w7q41v8m" />
+    <Content Include="Content\Assets\image\android.svgz" />
+    <Content Include="Content\Assets\image\banner-logo-new.svgz" />
+    <Content Include="Content\Assets\image\CaltechHomepage.svgz" />
+    <Content Include="Content\Assets\image\Home_page_card.svgz" />
+    <Content Include="Content\Assets\image\IOS.svgz" />
+    <Content Include="Content\Assets\image\IU_colored.svgz" />
+    <Content Include="Content\Assets\image\MITFacultyHomepage.svgz" />
+    <Content Include="Content\Assets\image\mit_xpro_color.svgz" />
+    <Content Include="Content\Assets\image\new_logo.svgz" />
+    <Content Include="Content\Assets\image\Purdue-Homepage.svgz" />
+    <Content Include="Content\Assets\image\SPJGUniversityLogocoloured.svgz" />
+    <Content Include="Content\Assets\image\Spjimr_60.svgz" />
+    <Content Include="Content\Assets\image\UMass_Homepage.svgz" />
+    <Content Include="Content\Assets\image\university_logo.svgz" />
+    <Content Include="Content\Assets\image\Uni_color_30px.svgz" />
+    <Content Include="assets\fonts\jw-icons.woff" />
+    <Content Include="assets\fonts\Roboto-Bold_v1.woff" />
+    <Content Include="assets\fonts\Roboto-Bold_v1.woff2" />
+    <Content Include="assets\fonts\Roboto-Light.woff" />
+    <Content Include="assets\fonts\Roboto-Light_v1.woff2" />
+    <Content Include="assets\fonts\Roboto-Medium_v1.woff" />
+    <Content Include="assets\fonts\Roboto-Medium_v1.woff2" />
+    <Content Include="assets\fonts\Roboto-Regular_v1.woff" />
+    <Content Include="assets\fonts\Roboto-Regular_v1.woff2" />
+    <Content Include="assets\image\android.svgz" />
+    <Content Include="assets\image\b-arrow %281%29.svgz" />
+    <Content Include="assets\image\b-arrow.svgz" />
+    <Content Include="assets\image\banner-logo-new.svgz" />
+    <Content Include="assets\image\caltech-success %281%29.svgz" />
+    <Content Include="assets\image\caltech-success.svgz" />
+    <Content Include="assets\image\CaltechHomepage.svgz" />
+    <Content Include="assets\image\Caltech_Megamenu.svgz" />
+    <Content Include="assets\image\chat-footer-icons_v_8.svgz" />
+    <Content Include="assets\image\course_sprite_7.svgz" />
+    <Content Include="assets\image\footer_sprite.svgz" />
+    <Content Include="assets\image\frs-sprite_4.svgz" />
+    <Content Include="assets\image\header-new.svgz" />
+    <Content Include="assets\image\headerpattern.svgz" />
+    <Content Include="assets\image\Home_page_card.svgz" />
+    <Content Include="assets\image\IOS.svgz" />
+    <Content Include="assets\image\IU_colored.svgz" />
+    <Content Include="assets\image\link.svgz" />
+    <Content Include="assets\image\master_icon.svgz" />
+    <Content Include="assets\image\MITFacultyHomepage.svgz" />
+    <Content Include="assets\image\mit_xpro_color.svgz" />
+    <Content Include="assets\image\mql-caltech-sprite %281%29.svgz" />
+    <Content Include="assets\image\mql-caltech-sprite.svgz" />
+    <Content Include="assets\image\mql-caltech-sprite_3.svgz" />
+    <Content Include="assets\image\mql-new-sprite_4 %281%29.svgz" />
+    <Content Include="assets\image\mql-new-sprite_4.svgz" />
+    <Content Include="assets\image\mql-sprint %281%29.svgz" />
+    <Content Include="assets\image\mql-sprint.svgz" />
+    <Content Include="assets\image\mql-sprite-blue.svgz" />
+    <Content Include="assets\image\mql-sprite-mit %281%29.svgz" />
+    <Content Include="assets\image\mql-sprite-mit.svgz" />
+    <Content Include="assets\image\mql-sprite-orange_v2_1 %281%29.svgz" />
+    <Content Include="assets\image\mql-sprite-orange_v2_1.svgz" />
+    <Content Include="assets\image\mql-sprite-Purdue.svgz" />
+    <Content Include="assets\image\mql-sprite-sp-jain-blue.svgz" />
+    <Content Include="assets\image\mql-sprite-spjimr %281%29.svgz" />
+    <Content Include="assets\image\mql-sprite-spjimr.svgz" />
+    <Content Include="assets\image\mql-sprite-uci-theme %281%29.svgz" />
+    <Content Include="assets\image\mql-sprite-uci-theme %282%29.svgz" />
+    <Content Include="assets\image\mql-sprite-uci-theme.svgz" />
+    <Content Include="assets\image\mql-sprite-UMass-4 %281%29.svgz" />
+    <Content Include="assets\image\mql-sprite-UMass-4.svgz" />
+    <Content Include="assets\image\mql-sprite-uminn-red.svgz" />
+    <Content Include="assets\image\mql-sprite-usc-2.svgz" />
+    <Content Include="assets\image\new_logo.svgz" />
+    <Content Include="assets\image\pg-sprite %281%29.svgz" />
+    <Content Include="assets\image\pg-sprite.svgz" />
+    <Content Include="assets\image\Purdue-Homepage.svgz" />
+    <Content Include="assets\image\SPJGUniversityLogocoloured.svgz" />
+    <Content Include="assets\image\Spjimr_60.svgz" />
+    <Content Include="assets\image\sprite %281%29.svgz" />
+    <Content Include="assets\image\sprite.svgz" />
+    <Content Include="assets\image\sprite_v2 %281%29.svgz" />
+    <Content Include="assets\image\sprite_v2 %282%29.svgz" />
+    <Content Include="assets\image\sprite_v2.svgz" />
+    <Content Include="assets\image\tac.min.js.download" />
+    <Content Include="assets\image\telegram_logo.svgz" />
+    <Content Include="assets\image\twit.svgz" />
+    <Content Include="assets\image\uci-footer.svgz" />
+    <Content Include="assets\image\umass-success %281%29.svgz" />
+    <Content Include="assets\image\umass-success.svgz" />
+    <Content Include="assets\image\UMass_Homepage.svgz" />
+    <Content Include="assets\image\university_logo.svgz" />
+    <Content Include="assets\image\Uni_color_30px.svgz" />
+    <Content Include="assets\image\wharton-sticky.svgz" />
+    <Content Include="assets\image\wharton.svgz" />
+    <Content Include="assets\js\0" />
+    <Content Include="assets\js\0d4c245767" />
+    <Content Include="assets\js\227666084092113" />
+    <Content Include="assets\js\d7w7q41v8m" />
+    <Content Include="assets\js\js" />
+    <Content Include="assets\image\IIT_Kanpur.svgz" />
+    <Content Include="assets\image\megamenu_1.svgz" />
+    <Content Include="assets\image\master_icon_new.svgz" />
+    <Content Include="assets\image\banner-dots-1.svgz" />
+    <Content Include="assets\image\bryan.avif" />
+    <Content Include="assets\image\ganapathi.avif" />
+    <Content Include="assets\image\merle-shinault.avif" />
+    <Content Include="assets\image\pg-dots.svgz" />
+    <Content Include="assets\image\pg-Polygon.svgz" />
+    <Content Include="assets\image\Rectangle.svgz" />
+    <Content Include="assets\image\ryan.avif" />
+    <Content Include="assets\image\sami.avif" />
+    <Content Include="assets\image\vinod .avif" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\DataScience.cshtml" />
+    <Content Include="Views\Home\Becomeourtrainer.cshtml" />
+    <Content Include="Views\Home\Resources.cshtml" />
+    <Content Include="Views\Home\DataAnalyst.cshtml" />
+    <Content Include="Views\Home\InvestmentBanking.cshtml" />
+    <Content Include="Views\Home\DigitalMarketing.cshtml" />
+    <Content Include="Views\Home\HireFromUs.cshtml" />
+    <Content Include="Views\Home\ForBusiness.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Home\Shipping.cshtml" />
+    <Content Include="Views\Home\Refund.cshtml" />
+    <Content Include="Views\Home\Terms.cshtml" />
+    <Content Include="Views\Home\PrivacyPolicy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18332</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
